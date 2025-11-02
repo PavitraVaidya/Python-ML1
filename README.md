@@ -251,32 +251,7 @@ GUI: not mandatory — the provided code is a console/daemon-style threaded app 
 * Move to dedicated local ASR (wav2vec2) and local NMT models for offline/robust performance.
 * Add voice activity detection (VAD) and speaker diarization to manage turn-taking.
 
----
-
-# Common repository structure (suggested)
-
-
-README_Multilingual_Translators_Project.md
-requirements.txt
-notebooks/
-  - experiments.ipynb
-data/
-  - translator.csv
-  - english-hindi.csv
-src/
-  - french_to_tamil_gradio.py
-  - dual_en_to_fr_hi.py
-  - voice_en_to_hi_tk.py
-  - logic_building_en_hi.py
-  - ocr_translator_tk.py
-  - realtime_en_es.py
-models/
-  - (optional: saved / fine-tuned model folders)
-scripts/
-  - finetune_mbart.py
-  - evaluate_bleu.py
-
-
+--
 
 # Dependencies (core)
 
