@@ -246,13 +246,36 @@ Methodology
 * *Pipeline*: runs two threads:
 * Spanish → English : listen in es-ES, translate es→en, speak en
 * English → Spanish: listen in en-US, translate en→es, speak es.
+
+
 ## How to run
 pip install SpeechRecognition googletrans pyttsx3 and also make sure to allow microphone permissions.
+
 * Run the script and let each participant speak in turn. To stop, press Ctrl+C.
-Results & evaluation
+* 
+### Results & evaluation
 * The demo shows functional end-to-end translation and speech, adequate for constrained small-group testing. However, the demo has the following limitations that affect performance:
+  
 * Dependency on Google online recognizer, network and API variability.
 
-* TTS languages/voices availability depends on OS. * No speaker-turn management (can talk over each other, causing misunderstandings/error). Limitations & next steps * Move to dedicated local ASR and local NMT models for offline/robust performance using wav2vec2. * Add voice activity detection and speaker diarization to manage turn-taking. -- # Dependencies (core) * Python 3.8+ * torch * transformers * sentencepiece * gradio * easyocr * googletrans (demo) * sounddevice, soundfile, librosa (for recording / audio processing) they are: *
-speech_recognition
-pyttsx3 * pytz, pandas Example requirements.txt line: transformers torch sentencepiece gradio easyocr googletrans sounddevice soundfile librosa speechrecognition pyttsx3 pandas pytz
+* TTS languages/voices availability depends on OS.
+* No speaker-turn management (can talk over each other, causing misunderstandings/error).
+  ### Limitations & next steps
+  * Move to dedicated local ASR and local NMT models for offline/robust performance using wav2vec2.
+    
+  * Add voice activity detection and speaker diarization to manage turn-taking.
+
+     --
+    # Dependencies (core)
+    * Python 3.8+
+    * torch
+    * transformers
+    * sentencepiece
+    * gradio
+    * easyocr
+    * googletrans (demo)
+    * sounddevice, soundfile, librosa (for recording / audio processing) they are:
+    * speech_recognition
+    * pyttsx3
+    * pytz, pandas Example
+      requirements.txt line: transformers torch sentencepiece gradio easyocr googletrans sounddevice soundfile librosa speechrecognition pyttsx3 pandas pytz
