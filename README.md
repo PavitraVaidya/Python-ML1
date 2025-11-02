@@ -25,7 +25,7 @@ Each task section below contains: Problem Statement, Dataset, Methodology, How t
 
 Build a translator feature that accepts *French words* and returns a *Tamil* translation *only* when the French word has *exactly five letters*. For any other length the system should refuse to translate and return a clear message.
 
-GUI requirement: a simple input textbox (French word) and an output textbox (Tamil translation), plus messages for invalid inputs.
+GUI requirement: a simple input (French word) and an output (Tamil translation), plus messages for invalid inputs.
 
 ## Dataset
 
